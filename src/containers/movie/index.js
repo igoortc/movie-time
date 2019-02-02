@@ -56,10 +56,7 @@ export class Movie extends Component {
     const info = (
       <Info>
         <Helmet>
-          <title>
-            {movie.title}
-            🎞
-          </title>
+          <title>{movie.title}</title>
         </Helmet>
         <Poster alt={movie.title} src={`https://image.tmdb.org/t/p/w342/${movie.poster_path}`} />
         <Description>

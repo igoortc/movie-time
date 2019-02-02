@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Wrapper, HeaderTitle, Navigation } from './styled';
+import { Wrapper, HeaderTitle } from './styled';
 
-class Header extends Component {
-  render() {
-    return (
-      <Wrapper>
+export const Header = () => {
+  return (
+    <Wrapper>
+      <Link to="/">
         <HeaderTitle>movieTime 🎞</HeaderTitle>
-        <Navigation>
-          <Link to="/">Search</Link>
-        </Navigation>
-      </Wrapper>
-    );
-  }
-}
+      </Link>
+    </Wrapper>
+  );
+};
 
 export default Header;

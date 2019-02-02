@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchMovies } from '../../store/actions/movies';
-import List from '../list';
+import List from '../../components/list';
 import { Search, Input, SearchButton, Error } from './styled';
 
 export class Home extends Component {

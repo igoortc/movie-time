@@ -14,11 +14,3 @@ export const HeaderTitle = styled.div`
   float: left;
   width: 50%;
 `;
-
-export const Navigation = styled.nav`
-  float: right;
-  text-align: right;
-  font-size: 20px;
-  padding-top: 13px;
-  width: 50%;
-`;
