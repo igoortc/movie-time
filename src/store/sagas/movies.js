@@ -23,14 +23,3 @@ export function* getMovieSaga(action) {
     yield put({ type: actions.GET_MOVIE_FAIL, message: error.message });
   }
 }
-
-export function* likeMovieSaga(action) {
-  try {
-    const response = yield api.likeMovie(action.id);
-    const movies = yield response.json();
-    yield put({ type: actions.LIKE_MOVIE_SUCCESS });
-    yield put({ type: actions.FETCH_MOVIES_SUCCESS, movies: movies });
-  } catch (error) {
-    yield put({ type: actions.LIKE_MOVIE_FAIL, message: error.message });
-  }
-}

@@ -6,8 +6,6 @@ export default (state = {}, action) => {
       return { message: actions.message };
     case actions.GET_MOVIE:
       return { message: actions.message };
-    case actions.LIKE_MOVIE:
-      return { message: actions.message };
     default:
       return state;
   }

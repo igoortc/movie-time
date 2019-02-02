@@ -5,5 +5,4 @@ import actions from '../actions/actionTypes';
 export function* watchMovies() {
   yield takeEvery(actions.FETCH_MOVIES, fetchMoviesSaga);
   yield takeEvery(actions.GET_MOVIE, getMovieSaga);
-  yield takeEvery(actions.LIKE_MOVIE, likeMovieSaga);
 }

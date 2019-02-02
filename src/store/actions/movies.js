@@ -9,8 +9,3 @@ export const getMovie = id => ({
   type: actions.GET_MOVIE,
   id,
 });
-
-export const likeMovie = id => ({
-  type: actions.LIKE_MOVIE,
-  id,
-});

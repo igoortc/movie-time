@@ -6,10 +6,6 @@ export const GET_MOVIE = 'GET_MOVIE';
 export const GET_MOVIE_SUCCESS = 'GET_MOVIE_SUCCESS';
 export const GET_MOVIE_FAIL = 'GET_MOVIE_FAIL';
 
-export const LIKE_MOVIE = 'LIKE_MOVIE';
-export const LIKE_MOVIE_SUCCESS = 'LIKE_MOVIE_SUCCESS';
-export const LIKE_MOVIE_FAIL = 'LIKE_MOVIE_FAIL';
-
 export default {
   FETCH_MOVIES,
   FETCH_MOVIES_SUCCESS,
@@ -17,7 +13,4 @@ export default {
   GET_MOVIE,
   GET_MOVIE_SUCCESS,
   GET_MOVIE_FAIL,
-  LIKE_MOVIE,
-  LIKE_MOVIE_SUCCESS,
-  LIKE_MOVIE_FAIL,
 };
