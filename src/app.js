@@ -16,6 +16,7 @@ const store = configureStore();
 const App = () => (
   <div className={globalStyles.app}>
     <Helmet>
+      <title>movieTime 🎞</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
       <meta name="theme-color" content="#1d1e1f" />

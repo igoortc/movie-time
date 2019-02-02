@@ -1,6 +1,6 @@
 import actions from '../actions/actionTypes';
 
-let initialState = {
+const initialState = {
   movies: [],
   loaded: false,
   error: false,

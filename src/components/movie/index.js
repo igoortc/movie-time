@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import Helmet from 'react-helmet';
 import { getMovie } from '../../store/actions/movies';
 import { Poster, Loading, Info, Description, H1 } from './styled';
 
@@ -54,6 +55,12 @@ export class Movie extends Component {
     );
     const info = (
       <Info>
+        <Helmet>
+          <title>
+            {movie.title}
+            🎞
+          </title>
+        </Helmet>
         <Poster alt={movie.title} src={`https://image.tmdb.org/t/p/w342/${movie.poster_path}`} />
         <Description>
           <H1>{movie.title}</H1>
