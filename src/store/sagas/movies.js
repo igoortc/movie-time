@@ -1,0 +1,26 @@
+import { put } from 'redux-saga/effects';
+import actions from '../actions/actionTypes';
+import api from '../../utils/api';
+
+export function* fetchMoviesSaga(action) {
+  try {
+    const response = yield api.fetchMovies(action.keyword);
+    const movies = yield response.data.results;
+    movies.length > 0
+      ? yield put({ type: actions.FETCH_MOVIES_SUCCESS, movies: movies })
+      : yield put({ type: actions.FETCH_MOVIES_FAIL });
+  } catch (error) {
+    yield put({ type: actions.FETCH_MOVIES_FAIL, message: error.message });
+  }
+}
+
+export function* likeMovieSaga(action) {
+  try {
+    const response = yield api.likeMovie(action.id);
+    const movies = yield response.json();
+    yield put({ type: actions.LIKE_MOVIE_SUCCESS });
+    yield put({ type: actions.FETCH_MOVIES_SUCCESS, movies: movies });
+  } catch (error) {
+    yield put({ type: actions.LIKE_MOVIE_FAIL, message: error.message });
+  }
+}
