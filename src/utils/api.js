@@ -11,7 +11,6 @@ const fetchMovies = keyword => {
 };
 
 const getMovie = id => {
-  console.log('getMovie', id);
   return axios({
     method: 'get',
     url: `${API_URL}movie/${id}?api_key=${API_KEY}`,

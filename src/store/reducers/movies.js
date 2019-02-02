@@ -4,6 +4,7 @@ let initialState = {
   movies: [],
   loaded: false,
   error: false,
+  movie: {},
 };
 
 export default (state = initialState, action) => {
@@ -22,11 +23,10 @@ export default (state = initialState, action) => {
         error: true,
       };
     case actions.GET_MOVIE_SUCCESS:
-      console.log('action', action);
       return {
         ...state,
         loaded: true,
-        movies: action.movies,
+        movie: action.movies,
         error: false,
       };
     default:

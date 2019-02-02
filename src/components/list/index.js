@@ -4,7 +4,6 @@ import { withRouter } from 'react-router-dom';
 import { MoviesList, Poster } from './styled';
 
 export const List = ({ movies, history }) => {
-  console.log('MOVIES', movies);
   const moviesList =
     movies &&
     movies.slice(0, 8).map(movie => (

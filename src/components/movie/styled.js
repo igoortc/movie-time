@@ -20,6 +20,7 @@ export const Info = styled.div`
 export const Description = styled.div`
   margin-left: 30px;
   display: inline-block;
+  max-width: 50%;
 `;
 
 export const H1 = styled.h1`
