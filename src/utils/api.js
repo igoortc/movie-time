@@ -10,6 +10,14 @@ const fetchMovies = keyword => {
   });
 };
 
+const getMovie = id => {
+  console.log('getMovie', id);
+  return axios({
+    method: 'get',
+    url: `${API_URL}movie/${id}?api_key=${API_KEY}`,
+  });
+};
+
 const likeMovie = id => {
   return axios({
     method: 'get',
@@ -19,5 +27,6 @@ const likeMovie = id => {
 
 export default {
   fetchMovies: fetchMovies,
+  getMovie: getMovie,
   likeMovie: likeMovie,
 };

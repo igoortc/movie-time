@@ -17,7 +17,7 @@ export class Home extends Component {
 
   render() {
     const { fetchMovies, movies } = this.props;
-    const error = <Error>We couldn't find any matches 😭</Error>
+    const error = <Error>We couldn't find any matches <span role="img" aria-label="Crying">😭</span></Error>
 
     return (
       <Search>

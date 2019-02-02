@@ -14,6 +14,16 @@ export function* fetchMoviesSaga(action) {
   }
 }
 
+export function* getMovieSaga(action) {
+  try {
+    const response = yield api.getMovie(action.id);
+    const movies = yield response.data;
+    yield put({ type: actions.GET_MOVIE_SUCCESS, movies: movies });
+  } catch (error) {
+    yield put({ type: actions.GET_MOVIE_FAIL, message: error.message });
+  }
+}
+
 export function* likeMovieSaga(action) {
   try {
     const response = yield api.likeMovie(action.id);

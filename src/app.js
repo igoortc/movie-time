@@ -9,6 +9,7 @@ import configureStore from './store/configureStore';
 import globalStyles from './assets/styles.css';
 import Header from './components/header';
 import Home from './components/home';
+import Movie from './components/movie';
 
 const store = configureStore();
 
@@ -22,6 +23,7 @@ const App = () => (
     <Header />
     <Switch>
       <Route exact path="/" component={Home} />
+      <Route path="/movie/:id" component={Movie} />
       <Miss />
     </Switch>
   </div>

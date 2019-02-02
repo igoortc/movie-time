@@ -21,6 +21,14 @@ export default (state = initialState, action) => {
         loaded: false,
         error: true,
       };
+    case actions.GET_MOVIE_SUCCESS:
+      console.log('action', action);
+      return {
+        ...state,
+        loaded: true,
+        movies: action.movies,
+        error: false,
+      };
     default:
       return state;
   }
