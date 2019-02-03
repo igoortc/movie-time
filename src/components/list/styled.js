@@ -9,4 +9,5 @@ export const Poster = styled.img`
   border-radius: 5px;
   margin: 10px 20px;
   cursor: pointer;
+  font-size: 10px;
 `;

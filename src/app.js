@@ -6,7 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 
-import globalStyles from './assets/styles.css';
+import GlobalStyle from './styled';
 import Header from './components/header';
 import Home from './containers/home';
 import Movie from './containers/movie';
@@ -14,7 +14,7 @@ import Movie from './containers/movie';
 const store = configureStore();
 
 const App = () => (
-  <div className={globalStyles.app}>
+  <div>
     <Helmet>
       <title>movieTime</title>
       <meta charset="utf-8" />
@@ -33,6 +33,7 @@ const App = () => (
       <Route path="/movie/:id" component={Movie} />
       <Miss />
     </Switch>
+    <GlobalStyle />
   </div>
 );
 

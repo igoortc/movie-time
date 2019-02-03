@@ -1,11 +1,11 @@
-import actions from './actionTypes';
+import { FETCH_MOVIES, GET_MOVIE } from './actionTypes';
 
 export const fetchMovies = keyword => ({
-  type: actions.FETCH_MOVIES,
+  type: FETCH_MOVIES,
   keyword,
 });
 
 export const getMovie = id => ({
-  type: actions.GET_MOVIE,
+  type: GET_MOVIE,
   id,
 });

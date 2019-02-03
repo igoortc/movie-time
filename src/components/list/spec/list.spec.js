@@ -1,13 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { BrowserRouter } from 'react-router-dom';
-import Header from '..';
+import movies from './movies';
+import List from '..';
 
-describe('Header', () => {
-  it('should render Header correctly', () => {
+describe('List', () => {
+  it('should render List correctly', () => {
     const component = shallow(
       <BrowserRouter>
-        <Header />
+        <List movies={movies} />
       </BrowserRouter>
     );
 

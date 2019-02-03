@@ -1,8 +1,8 @@
 import { takeEvery } from 'redux-saga/effects';
-import { fetchMoviesSaga, likeMovieSaga, getMovieSaga } from './movies';
-import actions from '../actions/actionTypes';
+import { fetchMoviesSaga, getMovieSaga } from './movies';
+import { FETCH_MOVIES, GET_MOVIE } from '../actions/actionTypes';
 
-export function* watchMovies() {
-  yield takeEvery(actions.FETCH_MOVIES, fetchMoviesSaga);
-  yield takeEvery(actions.GET_MOVIE, getMovieSaga);
+export default function* watchMovies() {
+  yield takeEvery(FETCH_MOVIES, fetchMoviesSaga);
+  yield takeEvery(GET_MOVIE, getMovieSaga);
 }
