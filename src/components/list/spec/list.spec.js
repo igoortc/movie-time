@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { BrowserRouter } from 'react-router-dom';
-import movies from './movies';
+import movies from '../../../utils/movies';
 import List from '..';
 
 describe('List', () => {

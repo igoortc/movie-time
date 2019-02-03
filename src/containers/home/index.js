@@ -31,6 +31,7 @@ export class Home extends Component {
     return (
       <Search>
         <Input
+          id="searchBox"
           type="text"
           name="keyword"
           placeholder="search for a movie"
