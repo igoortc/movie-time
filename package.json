@@ -55,7 +55,7 @@
       "enzyme-to-json/serializer"
     ],
     "setupFiles": [
-      "./setupTests.js"
+      "./config/tests-config.js"
     ]
   },
   "gitHead": "3655e359b1bdd1dfbd4ecd58a16a3d3da729a700",

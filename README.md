@@ -1,5 +1,5 @@
 # movieTime 🎞
-This is a simple project written in React ⚛️ (and Redux Saga) that searches movies from [an API](https://developers.themoviedb.org) and lists the results. If you click on a poster, you'll get more info on the movie.
+This is a simple project written in React ⚛️ (and Redux Saga) that searches movies from [an API](https://developers.themoviedb.org) and lists the results. By clicking on a poster, more information about the movie will be displayed.
 
 I used [hops](https://github.com/xing/hops) as boilerplate.
 
