@@ -31,6 +31,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/movie/:id" component={Movie} />
+      <Route path="**" component={Home} />
       <Miss />
     </Switch>
     <GlobalStyle />
