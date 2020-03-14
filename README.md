@@ -3,6 +3,8 @@ This is a simple project written in React ⚛️ (and Redux Saga) that searches 
 
 I used [hops](https://github.com/xing/hops) as boilerplate.
 
+Live demo: [https://my-movie-time.herokuapp.com/](https://my-movie-time.herokuapp.com/)
+
 ## Project setup
 ```
 git clone https://github.com/igoortc/movie-time.git
