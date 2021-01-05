@@ -15,7 +15,7 @@
     "serve": "hops serve"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-core": "^7.0.0-bridge.0",
     "hops": "^11.1.0",
     "hops-postcss": "^11.1.0",
