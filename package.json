@@ -45,7 +45,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "jest": "^24.0.0",
-    "jest-preset-hops": "^11.1.0",
+    "jest-preset-hops": "^15.2.1",
     "prettier": "^1.16.3",
     "react-test-renderer": "^16.7.0"
   },
